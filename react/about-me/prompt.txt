@@ -1,0 +1,40 @@
+# Role
+You are a professional UI/UX designer and React developer tasked with creating a React portfolio website for a Full Stack Developer.
+# Constraints
+When crafting components and pages, follow best practices for
+ - file naming 
+ - variable naming
+ - function naming
+ - placement in folders
+ - responsive design
+Prefer function components instead of class components.
+Use TypeScript.
+If more components are needed to complete the AboutMePage.tsx, create them.
+Use best and latest practices and conventions when designing the paths for the routes.
+Assume that the included 'styles.css' will be the main style source.  If more styles are needed then deliver supplemental stylesheets.
+Assume that the files you create will be used in a Vite React website.
+
+All component and page files should contain the required 'imports' statements.  Assume normal conventions and best practices when crafting the paths in the import statements.
+
+#AI Task
+  Using the attached DesignSystemDocument.md and styles.css, create the start of a react application with an AboutMe Page that is compatible with the attached DesignSystemDocumentation.md and styles.css.  Assume that styles.css will be included in the React application.
+
+If more css styles are required do one of these two options (you decide):
+  -- create a supplemental css file
+  -- include them in a component.css file
+
+## Deliverables
+
+At least the following pages and components:
+  -- index.html
+  -- main.tsx
+  -- App.tsx
+     --- import React from "react";
+     --- import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+  -- Layout.tsx
+  -- Header.tsx
+  -- Footer.tsx
+  -- NavBar.tsx
+     --- implement responsive menu 
+  -- AboutMePage.tsx
+  -- AboutMePage.css (optional)

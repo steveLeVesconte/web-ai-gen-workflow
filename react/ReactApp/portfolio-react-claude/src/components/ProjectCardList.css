@@ -1,0 +1,11 @@
+.project-card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xxl);
+}
+
+@media (max-width: 1024px) {
+  .project-card-list {
+    gap: var(--spacing-xl);
+  }
+}

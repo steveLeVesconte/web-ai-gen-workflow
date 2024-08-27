@@ -1,0 +1,31 @@
+# Role
+You are a professional UI/UX designer tasked with creating a portfolio website for a Full Stack Developer.
+
+
+## Sample Project Pages Design
+
+- Content Area:
+  -- Contains:
+    --- article
+    --- (at bottom ):
+       ----  'Previous Project" button on left    
+       ----  'Next Project' button on right
+
+# AI Task
+  Use the following inputs:
+    - DesignSystemDocument.md
+    - go-game-project-article.txt 
+    - styles.css 
+    - scripts.js
+    - project-supplemental.css
+ Create a Sample Go Game Project Page named "project0001.html" for the Full Stack Developer named 'John Doe'.
+  Assume the files will be available on the website:
+    - styles.css 
+    - scripts.js
+    - project-supplemental.css
+
+If new styles are required, create a supplemental.css file.
+
+## Deliverable:
+  project0001.html
+  supplemental.css (optional if needed )

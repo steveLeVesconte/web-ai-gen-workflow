@@ -1,0 +1,57 @@
+.project-card {
+  background-color: var(--color-text-reverse);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.project-card.even {
+  grid-template-columns: 1fr 2fr;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+
+.project-card-content {
+  padding: var(--spacing-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: content;
+}
+
+/* Alternating layout for odd and even cards */
+.project-card.odd {
+  grid-template-areas: "image content";
+}
+
+.project-card.even {
+  grid-template-areas: "content image";
+}
+
+.project-card-content h3 {
+  margin-bottom: var(--spacing-m);
+}
+
+.project-card-content p {
+  margin-bottom: var(--spacing-l);
+}
+
+@media (max-width: 1024px) {
+  .project-card,
+  .project-card.even {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-image {
+    height: 300px;
+  }
+}

@@ -1,0 +1,36 @@
+# Role
+You are a professional UI/UX designer tasked with creating a portfolio website for a Full Stack Developer.
+
+# Context
+The purpose of this page is to display images generated using an AI.
+Design a friendly way to display 10 images in a responsive grid.   
+
+# Page Design
+- Main Content Area:
+   -- max-width: 1280px  
+   -- margin: 0 auto
+   -- padding: 48px 32px 
+   -- Main Content Aria Contains:
+     --- Page Title 
+     --- Intro Paragraph
+     --- grid full of cards:
+         ---- Desktop:
+              ----- max-width: 1280px  
+              ----- columns: 2 
+# card:
+- title
+- paragraph about image
+- image
+   -- Placeholder: src="https://picsum.photos/800/600" 
+- 'Expand' button to show a full-sized modal window: 
+   -- modal has close button.
+   -- Placeholder: src="https://picsum.photos/1600/1200" 
+- Responsive Design
+  -- Desktop:
+     --- max-width: (approximately 624px)
+
+# AI Task
+  Using the attached DesignSystemDocument.md and styles.css and scripts.js, create a Sample 'Generated Art' for the Full Stack Developer named 'John Doe'.  Include at least 10 cards with sample images.
+  Assume the attached styles.css and scripts.js files will be available.
+  create a supplemental.css file for new styles.
+  create a supplemental.js file for any new javascript needed.

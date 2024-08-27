@@ -1,0 +1,65 @@
+# Role
+You are a professional UI/UX designer and React developer tasked with adding new pages and components to an existing Full Stack Developer Portfolio React web application
+
+# Data Design
+  -- the existing application already contains a Project model which contains an id which will be used when choosing a project and a ProjectService.
+  -- the contents of each Project Page will be hand crafted separately and will not be by referencing a data service.
+
+export interface Project {// already  exists in application
+  id: string;
+  title: string;
+  listPageDescription: string;   // used on List Page
+  homePageDescription: string;   // used on Home Page
+  listPageImageUrl: string;      // used on List Page
+  homePageImageUrl: string;      // used on Home Page
+  isFeatured: boolean; // is featured on the Home Page
+  projectDate: Date; // the date the project was completed
+  isHidden: boolean; // is hidden from both the project List Page and the Home Page
+  featureOrder?: number; // the order in which the project appears on the Home Page
+}
+
+# Deliverables
+At least the following files:
+
+  - ProjectPage0001.tsx  -  ('0001' in this case refers to the id of the Project)
+  - ProjectPages.css  (optional)
+
+# Constraints
+When crafting components and pages, follow best practices for
+ - file naming 
+ - variable naming
+ - function naming
+ - placement in folders
+ - responsive design
+
+Prefer function components instead of class components.
+Use TypeScript.
+If more components are needed to complete the ProjectPage0001.tsx, create them.
+Use best and latest practices and conventions when designing the paths for the routes.
+Assume that the included 'styles.css' will be the main style source.  If more styles are needed then deliver supplemental stylesheets or a ProjectPages.css file.
+Assume that the files you create will be used in an existing Vite React website.
+
+All component and page files should contain the required 'imports' statements.  Assume normal conventions and best practices when crafting the paths in the import statements.
+# Context
+  - In general, each Project page will be composed of:
+     -- Title
+     -- subtitles, paragraphs, Article Images
+     -- At the bottom of each Project Page:
+        --- Next button
+        --- Previous button
+  - two functions are required to support the "Next" and "Previous" buttons:
+    -- use the fearureOrder and the isHidden to make the "Next" and "Previous" buttons work.
+    -- these functions should probably be added to ProjectService.ts
+
+
+#AI Task
+  Using the attached DesignSystemDocument.md and styles.css, create  a sample Project Page named 'ProjectPage0001.tsx' that is compatible with the attached DesignSystemDocument.md and styles.css.  Assume that styles.css will be included in the React application.
+
+
+## Deliverables
+At least the following files:
+
+  - ProjectPage0001.tsx
+  - ProjectPages.css  (optional)
+  - two new functions to support 'Next" and "Previous"
+

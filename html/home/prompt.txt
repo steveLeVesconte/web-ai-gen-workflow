@@ -1,0 +1,56 @@
+# Role
+You are a professional UI/UX designer tasked with creating a portfolio website for a Full Stack Developer.
+
+# Home Page Design
+- Hero Image
+  -- Spans viewport width
+  -- Height: 60vh
+  -- Object-fit: cover
+  -- Placeholder: src="https://picsum.photos/3200/600" alt="Hero Image"
+- Main Content Area 
+   -- max-width: 1280px  
+   -- margin: 0 auto
+   -- padding: 0 32px 
+   -- Main Content Aria Contains:
+     --- Page Title (developer name and 'Portfolio')
+     --- Intro Paragraph
+     --- Project Card List with 4 Project Cards
+        ---- Contains Project Cards
+        ---- Grid Layout:
+            ----- bottom-margin: 48px
+            ----- row-gap: 48px
+            ----- 1 column
+
+## Project Card
+- background-color: #ffffff
+- Responsive breakpoint: 1024px
+- Box shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+- Border radius: 8px
+- Overflow: hidden
+
+### Desktop Project Card Layout:
+- Grid layout:
+  -- Columns: 3
+  -- Column gap: 32px
+- Image spans 2 columns
+- Text Section 
+     -- spans 1 column
+     -- padding: --spacing-md
+     -- contains:
+        --- Project Title
+        --- paragraph
+        --- Button Link: "Learn More"
+  - Alternate image placement (left/right)
+
+### Mobile Project Card Layout:
+- Grid layout:
+  - Columns: 1
+- Image above Text Section
+
+
+# AI Task
+  Using Home Page Design and the attached DesignSystemDocument.md and styles.css and scripts.js, create a Home Page for the Full Stack Developer named 'John Doe'.
+  Assume the attached styles.css and scripts.js files will be available.
+  create a supplemental.css file for new styles.
+  
+

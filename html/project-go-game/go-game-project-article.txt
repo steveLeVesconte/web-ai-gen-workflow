@@ -1,0 +1,181 @@
+#h1
+React Go Game for Two Players
+
+#p
+The purpose of this project is to provide an adequately rich problem domain for the exploration of multiple technologies. In my experience, a developer really does not learn a technology until they apply it to a project not contemplated by the writers of textbooks and tutorials.
+
+#avatar 
+#developer Steven M LeVesconte
+# date
+ Jan 2, 2024 • 5 min read
+
+#hero image
+
+#h2
+React Go Game for Two Players
+
+#caption
+Go Game - 2,500 years and counting. 
+
+#h2
+What is a "Go Game"?
+#p
+“Go is an abstract strategy board game for two players, in which the aim is to surround more territory than the opponent. The game was invented in China more than 2,500 years ago and is believed to be the oldest board game continuously played to the present day.” Source: Wikipedia
+
+#article image
+#caption
+Go Game - 2,500 years and counting.
+
+
+#h2
+Comparing Go To Chess
+
+#p
+Like Chess, Go is a two person board game where chance plays no role in deciding the outcome of the game. Both games have steep learning curves and players can spend decades improving their skills.
+
+That said, an argument can be made that Go is considerably more difficult for computer algorithms to “learn” and it has proven to be more difficult for computers to compete with master Go players.
+
+It required approximately 20 more years for computer-based strategies to compete in Go than in Chess. Google Deep Mind defeated world the champion Go Player in 2016 (approximately 20 years after computers began to dominate human chess players). It was not possible for computer algorithms to compete with human Go champions until machine learning technologies reached an adequate level of maturity.
+
+Here is one comparison that helps explain why Go is more challenging for computer algorithms than Chess. There are just vastly more possible moves in Go than in chess. The following compares just the possible options in just the first two moves of each game.
+
+A count of possible first and second moves in chess = 20 x 20 = 400 possible moves in the first two turns.
+
+A count of possible first and second moves in Go = 362 x 361 = 130,682 possible moves in the first two turns.
+
+A rough approximation of the number of all the possible moves in a Go game is 362! (362 factorial = 362 x 361 x 360 x 359 … 4 x 3 x 2 x 1). It is a really big number in the neighborhood of 5 followed by 770 zeros. That is considerably more than the number of atoms in the known universe, in case you were wondering.
+
+Thus, the “brute force” mapping of all useful moves as has been practiced in Chess, is not feasible in Go.
+
+#h2
+The Go Game for Two Players as a React Responsive Web Application
+
+#p
+Below is the responsive view as seen on a wide desktop.
+
+#image of game
+#caption
+Desktop wide screen - Go Game
+
+#p
+And here is the responsive view on a smart phone.
+
+#image of mobile game
+
+#caption
+Go Game as captured on a Samsung Galaxy s22 Ultra smart phone
+
+
+This project provides the following challenges to provoke deep learning:
+#bullet list
+Spatial algorithms to score each game move
+State Management to share information between the 361 intersections and the containing board
+Push messaging to alert users to the play of opponents and to support chat
+Authorization and authentication
+NoSql Document Database
+Responsive Web Design
+React, TypeScript, HTML5, Chakra UI, Zustand state management (Redux light?), CSS
+
+#h2
+Features of the Project
+
+#bullet list
+
+Firebase Authentication - SAML and generic OpenID Connect - (Google)
+Registering new users
+Users can create new matches by choosing opponents and stone colors
+Users can choose among available matches in progress
+Users can place stones (move) when it is their turn or pass
+The most recent move is marked with move number (see '100' in the images)
+Users are prompted to confirm moves and passes
+Users can live-chat while playing a Go Game
+
+#h2
+Features Not Included
+
+The following features are not included but may be added at a future date.
+
+#bullet list
+Playing against the computer (AI)
+Final scoring of the game to determine the winner In a Go game, this is a non-trivial feature.
+Review (stepping through) the game moves one at a time.
+
+
+#start a green box
+--h2
+  Try it right now!
+
+--p
+Note, this button will open React Go Game in a new browser tab. You can login as one of the "test users" provided on the login page and play the game. You can, if you like, compete against a friend, if they also open this link on their computer or phone.
+
+--button
+Click on this link to login and play Go against a friend
+
+--p
+If you are not familiar with the rules of the Game of Go, you can try this tutorial.
+
+A Go Game Tutorial: This tutorial was chosen because of its educational value. No product endorsement is implied.
+#end a green box
+
+#h2
+Continuous Improvement
+
+#p
+This project provides the following opportunities for continuous improvement.
+
+#bullet list
+Add Semantic Versioning Tags to Git Repository
+Improve Unit Test Coverage
+Code review looking for opportunities to improve (I will find plenty)
+User Documentation and Help including Go Game rules
+
+#h2
+Future Forks (planned major revisions and new versions)
+
+#p
+An adequately rich problem domain project can be re-used to exercise more skillsets. The following are the future plans for this project.
+
+#bullet list
+-Replace the Firebase API with AWS Serverless Lambdas backed by DynamoDB
+-Host the Go Game in an AWS EC2 instance and/or Dockerize with AWS Fargate
+-Re-engineer UI with React Native
+-Add AI opponent
+
+#h2
+Past Iterations
+
+#image of console game
+
+#p
+Two console Go Games - one in C# (2010) and one in Nodejs (2023)
+
+#caption
+Nodejs Console Go Game (2023)
+
+Angular 8 Go Game - 2019
+
+#bullet list
+-Azure Active Directory B2C
+-Azure SQL
+-Azure DevOps - CI/CD
+-Docker
+
+#image of desktop go game
+
+#caption
+Angular 8 Go Game
+
+#bullet list
+-ASP.NET MVC Go Game (~2015) No image available
+  --ASP.NET WEB API
+  --Azure SQL
+-ASP.NET Go Game (~2010) No image available
+
+#p
+You can visit the GitHub repository for this project.
+
+#link
+Click here to go to GitHub project (open in new tab)
+
+#link
+Back To Top↑

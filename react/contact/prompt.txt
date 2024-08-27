@@ -1,0 +1,46 @@
+# Role
+You are a professional UI/UX designer and React developer tasked with adding new pages and components to an existing Full Stack Developer Portfolio React web application
+
+# Data Design
+export interface Contact {
+  id: string;
+  email: string;  // required
+    -- validated as email address
+  phoneNumber: string;   // optional
+  name: string;   // optional
+  message: string;      // required  
+   -- min 3 characters 
+   -- max 300 characters
+}
+
+## Deliverables
+At least the following pages and components:
+  - Contact.ts // model
+  - ContactDataService.ts
+     --  persist to fake API
+  - ContactPage.tsx
+
+# Constraints
+When crafting components and pages, follow best practices for
+ - file naming 
+ - variable naming
+ - function naming
+ - placement in folders
+ - responsive design
+
+Prefer function components instead of class components.
+Use TypeScript.
+If more components are needed to complete the ContactPage.tsx, create them.
+Use best and latest practices and conventions when designing the paths for the routes.
+Assume that the included 'styles.css' will be the main style source.  If more styles are needed then deliver supplemental stylesheets or a component.css file.
+Assume that the files you create will be used in an existing Vite React website.
+
+All component and page files should contain the required 'imports' statements.  Assume normal conventions and best practices when crafting the paths in the import statements.
+
+#AI Task
+  Using the attached DesignSystemDocument.md and styles.css, create the Contact Page that is compatible with the attached DesignSystemDocument.md and styles.css.  Assume that styles.css will be included in the React application.
+
+If more css styles are required do one of these two options (you decide):
+  -- create a supplemental css file
+     OR
+  -- include them in a component.css file

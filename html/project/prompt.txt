@@ -1,0 +1,20 @@
+# Role
+You are a professional UI/UX designer tasked with creating a portfolio website for a Full Stack Developer.
+
+
+## Sample Project Pages Design
+
+- Content Area:
+  -- Contains:
+    --- Page title (name of project)
+    --- Date of project
+    --- Project page hero image
+    --- Article paragraphs alternating with Article Images
+    --- (at bottom ):
+       ----  'Previous Project" button on left    
+       ----  'Next Project' button on right
+
+# AI Task
+  Using Sample Project Pages Design and the attached DesignSystemDocument.md and styles.css and scripts.js, create a Sample Project Pages for the Full Stack Developer named 'John Doe'.
+  Assume the attached styles.css and scripts.js files will be available.
+  create a supplemental.css file for new styles.

@@ -1,0 +1,98 @@
+
+# Role
+You are a professional UI/UX designer and React developer tasked with adding new pages and components to an existing Full Stack Developer Portfolio React web application.
+
+# Context
+  The purpose of the ProjectListPage is to display of a paged list of Projects.
+  The ProjectListPage should be "paged":
+   -  10 rows to start   
+   -  "View More" button at the bottom
+  ## Desktop - Each row:
+   - on left - Text Area:
+      -- title
+      -- listPageDescription
+      -- a button to link to the project page
+         --- the path to any project is "Project" + Prject id
+         --- example:  "Project0001"
+   - on right:
+      -- image (from listPageImageUrl)
+
+  ## Mobile - Each row:
+   - above:
+      -- image (from listPageImageUrl)
+   - below - Text Area:
+      -- title
+      -- listPageDescription
+      -- a button to link to the project page
+         --- the path to any project is "Project" + Prject id
+         --- example:  "Project0001"
+
+## Data Design
+The Model.ts file already exists in the application.
+export interface Project {
+  id: string;        // used on List Page
+  title: string;     // used on List Page
+  listPageDescription: string;   // used on List Page
+  homePageDescription: string;   
+  listPageImageUrl: string;      // used on List Page
+  homePageImageUrl: string;      
+  isFeatured: boolean; 
+  projectDate: Date;        // used on List Page
+  isHidden: boolean;        // used on List Page
+  featureOrder?: number;    // used on List Page
+}
+
+
+## Example Data
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'E-commerce Platform',
+    listPageDescription: 'A full-stack e-commerce solution with React and Node.js.',
+    homePageDescription: 'Built a scalable e-commerce platform using React, Node.js, and MongoDB.',
+    listPageImageUrl: 'https://picsum.photos/300/200?random=1',
+    homePageImageUrl: 'https://picsum.photos/1200/800?random=1',
+    isFeatured: true,
+    projectDate: new Date('2023-12-15'),
+    isHidden: false,
+    featureOrder: 1
+  }]
+
+# Constraints
+When crafting components and pages, follow best practices for
+ - file naming 
+ - variable naming
+ - function naming
+ - placement in folders
+ - responsive design
+
+Prefer function components instead of class components.
+Use TypeScript.
+If more components are needed to complete the ProjectListPage.tsx, create them.
+Use best and latest practices and conventions when designing the paths for the routes.
+Assume that the included 'styles.css' will be the main style source.  If more styles are needed then deliver supplemental stylesheets or a component.css file.
+Assume that the files you create will be used in an existing Vite React website.
+
+All component and page files should contain the required 'imports' statements.  Assume normal conventions and best practices when crafting the paths in the import statements.
+
+#AI Task
+  Using the attached DesignSystemDocument.md and styles.css, create the start of a react application with an ProejectList Page that is compatible with the attached DesignSystemDocument.md and styles.css.  
+  -- Assume that styles.css will be included in the React application.
+  -- Assume that ProjectDataService.ts already exists in the React application.
+  -- provide all of the "Deliverables"
+
+If more css styles are required do one of these two options (you decide):
+  -- create a supplemental css file
+     OR
+  -- include them in a component.css file
+
+## Deliverables
+
+At least the following pages, files, snippets and components:
+
+  -- a snippet for ProjectDataService.ts to provide "paging" functions
+  -- ProjectListPage.tsx
+  -- ProjectListPage.css (optional)
+  -- any other required components such as perhaps a "ProjectRow" component or "Item" component
+  -- a snippet for ProjectDataService.ts to expand the Example Data to 20 example Projects
+

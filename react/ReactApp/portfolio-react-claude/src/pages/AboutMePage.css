@@ -1,0 +1,28 @@
+.about-me-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-me-page h1 {
+  margin-bottom: var(--spacing-s);
+}
+
+.about-me-page h2 {
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.about-me-page ul {
+  margin-bottom: var(--spacing-l);
+  padding-left: var(--spacing-xl);
+}
+
+.about-me-page li {
+  margin-bottom: var(--spacing-s);
+}
+
+@media (max-width: 768px) {
+  .about-me-page {
+    padding: 0 var(--spacing-m);
+  }
+}
