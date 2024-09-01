@@ -1,12 +1,12 @@
 # Role
 You are a professional UI/UX designer tasked with creating a portfolio website for a Full Stack Developer.
 # AI Task
-  Extrapolate from 'WebsiteDesignSystemPromptAIImproved.md' to crate an HTML web page for:
+  Extrapolate from 'WebsiteDesignSystemPrompt.md' to create an HTML web page for:
   - Site: 'Full Stack Developer 
   - Page: 'About Me'.
 ## Deliverables
-- Sample HTML Page: Develop a Portfolio About Me Page for "John Doe" .
-- CSS Implementation: Create a CSS file that applies the design system to various pages. Use css variables to allow the  developer to change theme's and spacing later. 
+- Sample HTML Page: 'About Me' page for "John Doe" (a Full Stack Developer).
+- CSS Implementation: Create a CSS file that applies the design system to various pages. Use CSS variables to allow the  developer to change the theme's colors and spacing later. 
 - JavaScript Implementation: Create a JavaScript file that handles the hamburger menu functionality, including:
   -- Toggling the mobile menu's visibility.
   -- Handling menu item clicks to close the menu.
