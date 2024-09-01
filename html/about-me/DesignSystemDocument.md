@@ -66,7 +66,7 @@
       ---- margin: 0 auto
       ---- padding: 0 32px
       ---- Contains:
-        ----- Brand Title on left
+        ----- Brand Title on left (developer's name)
         ----- NavBar on right
   -- Main Content Aria:
     --- flex-grow:1
@@ -78,8 +78,8 @@
       ---- padding: 0 32px
       ---- Content displayed horizontally in one row with appropriate spacing
       ---- contains:
-        ----- copywright on left
-        ----- social links on right (gitHub, LinkedIn)
+        ----- copyright on left
+        ----- social links on right (GitHub, LinkedIn)
 
 ### Mobile Layout
 - Main Content Area:
@@ -107,7 +107,7 @@
      --- flex-direction: column
      --- align-items: center
   -- Display (X) button for closing the full-screen-vertical-menu
-    --- Clicking (x) button hides the ull-screen-vertical-menu
+    --- Clicking (x) button hides the full-screen-vertical-menu
 
 ### Article Image (Shadowed)
 - Spans content area
